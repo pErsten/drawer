@@ -1,6 +1,4 @@
-﻿#include <iostream>
-#include <iomanip>
-#include <conio.h>
+﻿#include <conio.h>
 #include <Windows.h>
 #define WIN32_LEAN_AND_MEAN
 #define SCREEN_WIDTH 101
@@ -61,6 +59,7 @@ int main()
 				  if (buffer[posy][posx].Attributes < 16) buffer[posy][posx].Attributes = color; break;
 		case ' ': buffer[posy][posx].Char.AsciiChar = '_'; buffer[posy][posx].Attributes = color * 16; break;
 		case 'z': buffer[posy][posx].Char.AsciiChar = '_'; buffer[posy][posx].Attributes = color; break;
+		case 'q': exit(0);
 		}
 		WriteConsoleOutput(hOutput, (CHAR_INFO*)buffer, dwBufferSize,
 			dwBufferCoord, &rcRegion);
