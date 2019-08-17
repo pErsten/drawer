@@ -6,7 +6,7 @@ with different colors, which are listed in up-left corner, which you can choose 
 palette.
 
 Controls:
- w,a,s,d - to move cursor
- space - to draw that pixel, where cursor is now with corresponding color
- z - clear pixel from color
- q - exit
+ w,a,s,d - to move cursor;
+ space - to draw that pixel, where cursor is now with corresponding color;
+ z - clear pixel from color;
+ q - exit.
